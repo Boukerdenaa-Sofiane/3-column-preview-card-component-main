@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+:root {
+  --font-fam1: "Lexend Deca", sans-serif;
+  --font-fam2: "Big Shoulders Display", cursive;
+
+  --prim-colr1: hsl(31, 77%, 52%);
+  --prim-colr2: hsl(184, 100%, 22%);
+  --prim-colr3: hsl(179, 100%, 13%);
+
+  --sec-colr1: hsla(0, 0%, 100%, 0.75);
+  --sec-colr2: hsl(0, 0%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-fam1);
+  background-color: var(--sec-colr2);
+}
+img {
+  width: 70px;
+}
+h1 {
+  font-size: 2.5rem;
+  color: var(--sec-colr2);
+  font-family: var(--font-fam2);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+p {
+  color: var(--sec-colr1);
+  font-weight: 400;
+  font-size: 15px;
+}
+.container {
+  max-width: 300px;
+  margin: 4rem auto;
+}
+
+.content {
+  margin: 0 2rem;
+}
+
+.first-card {
+  background-color: var(--prim-colr1);
+}
+
+.first-card h1,
+.second-card h1,
+.third-card h1 {
+  margin: 1.5rem 0;
+}
+
+.first-card p,
+.second-card p,
+.third-card p {
+  margin: 1rem 0;
+}
+
+.first-card img,
+.second-card img,
+.third-card img {
+  margin-top: 3rem;
+}
+
+.first-card button,
+.second-card button,
+.third-card button {
+  border: none;
+  cursor: pointer;
+  padding: 0.725rem 1.5rem;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  border-radius: 20px;
+  margin: 1rem 0 2rem 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.first-card button {
+  color: var(--prim-colr1);
+}
+button:hover {
+  background-color: transparent;
+  color: var(--sec-colr2);
+  border: 2px solid var(--sec-colr2);
+}
+
+.second-card {
+  background-color: var(--prim-colr2);
+}
+.second-card button {
+  color: var(--prim-colr2);
+}
+.second-card button:hover {
+  background-color: transparent;
+  color: var(--sec-colr2);
+  border: 2px solid var(--sec-colr2);
+}
+
+.third-card {
+  background-color: var(--prim-colr3);
+}
+.third-card p {
+  font-size: 16px;
+}
+.third-card button {
+  color: var(--prim-colr3);
+}
+.third-card button:hover {
+  background-color: transparent;
+  color: var(--sec-colr2);
+  border: 2px solid var(--sec-colr2);
+}
+
+@media (min-width: 900px) {
+  .container {
+    display: flex;
+  }
+  .container {
+    max-width: 850px;
+  }
+  .first-card h1,
+  .second-card h1,
+  .third-card h1 {
+    margin: 2rem 0;
+  }
+
+  .first-card p,
+  .second-card p,
+  .third-card p {
+    line-height: 1.5;
+    margin-bottom: 7rem;
+  }
+}
